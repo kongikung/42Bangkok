@@ -10,16 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
 int	ft_str_is_alpha(char *str)
 {
 	int	i;
-	int	r;
 
 	i = 0;
-	r = -1;
-
 	while (str[i] != '\0')
 	{
 		if ((str[i] <= 65 || str[i] >= 90) && (str[i] <= 97 || str[i] >= 122))
@@ -28,6 +23,5 @@ int	ft_str_is_alpha(char *str)
 		}
 		i++;
 	}
-
 	return (0);
 }
