@@ -21,13 +21,9 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	while((src[i] != '\0') && (i < n))
 	{
 		dest[i] = src[i];
-		i++;
+		++i;
 	}
-	while(i < n)
-	{
-		dest[i] = '\0';
-		i++;
-	}
+	dest[i] = '\0';
 	return (dest);
 }
 
@@ -39,7 +35,8 @@ int	main(void)
 	char	str1[10] = "testing";
 	char	str2[10] = "gnitset";
 
-	printf("Before all function str1 = %s\n", str1);
+	printf("Before all function of str1 = %s\n", str1);
+	printf("Before all function of str2 = %s\n", str2);
 	printf("After call function str1 = %s", ft_strncpy(str1, str2, len));
 	return (0);
 }
